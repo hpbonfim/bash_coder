@@ -41,3 +41,4 @@ git rm -rf 20**
 git rm -rf 19**
 git commit --allow-empty-message -am ""
 git push origin master
+rm -rf Fri_* Sat_* Mon_* Tue_* Wed_* Thu_* Sun_*
