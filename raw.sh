@@ -1,3 +1,4 @@
+sh dates.sh
 Y=2020
 RANDOM=$$
 for CODES in {2020}
