@@ -1,6 +1,6 @@
 Y=2020
 RANDOM=$$
-for CODER in {2020}
+for CODES in {2020}
 do
   mkdir $Y
   cd $Y
@@ -17,6 +17,7 @@ do
       if [ true ]
       #if
        then
+        # S=$(jot -r 30 60 100)
          for i in {1..100}
          do
            #echo "$S ********************************"
@@ -40,5 +41,6 @@ do
 done
 git push origin master
 git rm -rf 20**
+git rm -rf 19**
 git commit -am "cleanup"
 git push origin master
