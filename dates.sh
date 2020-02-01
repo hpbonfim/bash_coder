@@ -1,7 +1,7 @@
 while read date
 do
     fileName=`echo "$date" | tr " " "_"`
-    date="$date 14:00 2013 +0500"
+    date="$date 10:00 2010 +0300"
     echo "Creating file... $fileName"
     touch "$fileName"
     git add "$fileName"
