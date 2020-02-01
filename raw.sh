@@ -1,6 +1,6 @@
-Y=2019
+Y=2020
 RANDOM=$$
-for jhgdfshdj in {2019}
+for CODER in {2020}
 do
   mkdir $Y
   cd $Y
