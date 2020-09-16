@@ -1,8 +1,6 @@
-cd ~/Documents/github.
+mkdir bash_coder # make the repo folder anywhere. 
 
-mkdir gitsploit # make the repo folder anywhere. 
-
-cd gitsploit && git init. 
+cd bash_coder && git init. 
 
 git remote add origin <YOUR GITHUB REPO LINK HERE>. 
  
