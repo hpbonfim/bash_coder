@@ -36,6 +36,7 @@ Wed Feb 20
 Thu Feb 21
 Fri Feb 22
 Mon Feb 25
+Tue Feb 26
 Wed Feb 27
 Thu Feb 28
 Fri Mar 01
@@ -58,6 +59,7 @@ Mon Mar 25
 Tue Mar 26
 Wed Mar 27
 Thu Mar 28
+Fri Mar 29
 Mon Apr 01
 Tue Apr 02
 Wed Apr 03
@@ -81,6 +83,7 @@ Fri Apr 26
 Mon Apr 29
 Tue Apr 30
 Wed May 01
+Thu May 02
 Fri May 03
 Mon May 06
 Tue May 07
@@ -106,6 +109,7 @@ Mon Jun 03
 Tue Jun 04
 Wed Jun 05
 Thu Jun 06
+Fri Jun 07
 Mon Jun 10
 Tue Jun 11
 Wed Jun 12
@@ -126,6 +130,7 @@ Tue Jul 02
 Wed Jul 03
 Thu Jul 04
 Fri Jul 05
+Mon Jul 08
 Tue Jul 09
 Wed Jul 10
 Thu Jul 11
@@ -134,6 +139,7 @@ Mon Jul 15
 Tue Jul 16
 Wed Jul 17
 Thu Jul 18
+Fri Jul 19
 Mon Jul 22
 Tue Jul 23
 Wed Jul 24
@@ -180,6 +186,7 @@ Wed Sep 18
 Thu Sep 19
 Fri Sep 20
 Mon Sep 23
+Tue Sep 24
 Wed Sep 25
 Thu Sep 26
 Fri Sep 27
