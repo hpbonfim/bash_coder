@@ -1,6 +1,7 @@
 sh dates.sh
 Y=2009
 RANDOM=$$
+TIME=$(date +"%T")
 for CODES in {2009}
 do
   mkdir $Y
@@ -23,10 +24,10 @@ do
            #echo "$S ********************************"
            echo "+" >> commit.md
            #echo $S
-           export GIT_COMMITTER_DATE="$Y-$M-$D 12:12:12"
-           export GIT_AUTHOR_DATE="$Y-$M-$D 12:12:12"
+           export GIT_COMMITTER_DATE="$Y-$M-$D $TIME"
+           export GIT_AUTHOR_DATE="$Y-$M-$D $TIME"
            git add commit.md -f 
-           git commit --date="$Y-$M-$D 12:12:12" -m "$i on $M $D $Y" 
+           git commit --date="$Y-$M-$D $TIME" -m "$i on $M $D $Y" 
          done
        else
            echo "-----------------------------"
