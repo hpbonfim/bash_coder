@@ -1,9 +1,11 @@
+time=$(date +"%H":"%M")
+year="2009"
 while read date
 do
     fileName=`echo "$date" | tr " " "_"`
-    date="$date 12:37 2009 +0300"
+    date="$date $time $year +0300"
     echo "Creating file... $fileName"
     touch "$fileName"
     git add "$fileName"
-    git commit --date="$date" --author="hpbonfim <hp_bonfim@hotmail.com>" -m "$fileName"
+    git commit --date="$date" --author="username-png <bonfim.henriquepaulo@gmail.com>" -m "$fileName"
 done <dates.txt
