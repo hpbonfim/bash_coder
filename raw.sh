@@ -1,7 +1,7 @@
 sh dates.sh
-Y=2020
+Y=2009
 RANDOM=$$
-for CODES in {2020}
+for CODES in {2009}
 do
   mkdir $Y
   cd $Y
