@@ -3,10 +3,13 @@
 3. sh raw.sh
 
 FOR STORE THE USERNAME AND PASSORD
+
 $ git config credential.helper store
+
 $ git push https://github.com/hpbonfim/bash_coder.git
 
 Username for 'https://github.com': <USERNAME>
+  
 Password for 'https://USERNAME@github.com': <PASSWORD>
 
 git config --global credential.helper "cache --timeout 7200"
