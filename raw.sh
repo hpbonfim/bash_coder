@@ -1,43 +1,33 @@
 sh dates.sh
-Y=2009
-RANDOM=$$
 TIME=$(date +"%T")
-for CODES in {2009}
+
+for Y in $COMMIT_DATE
 do
-  mkdir $Y
-  cd $Y
-  for M in {01,02,03,04,05,06,07}
-  do
-    mkdir $M
-    cd $M
-    for D in {01..28}
+    mkdir $Y
+    cd $Y
+    for M in {01..12}
     do
-      mkdir $D
-      cd $D
-      DD=$(($RANDOM/1000))
-      echo "???" > commit.md
-      if [ true ]
-      #if
-       then
-         for i in {1..100}
-         do
-           #echo "$S ********************************"
-           echo "+" >> commit.md
-           #echo $S
-           export GIT_COMMITTER_DATE="$Y-$M-$D $TIME"
-           export GIT_AUTHOR_DATE="$Y-$M-$D $TIME"
-           git add commit.md -f 
-           git commit --date="$Y-$M-$D $TIME" -m "$i on $M $D $Y" 
-         done
-       else
-           echo "-----------------------------"
-      fi
-      cd ../
+        mkdir $M
+        cd $M
+        for D in {01..31}
+        do
+            mkdir $D
+            cd $D
+            for i in {01..12}
+            do
+                echo "$TIME" >> commit.md
+                export GIT_COMMITTER_DATE="$Y-$M-$D $TIME"
+                export GIT_AUTHOR_DATE="$Y-$M-$D $TIME"
+                git add commit.md -f
+                git commit --date="$Y-$M-$D 12:0$i:00" -m "$i on $M $D $Y"
+            done
+            cd ../
+        done
+        cd ../
     done
     cd ../
-  done
-  cd ../
 done
+
 git push origin master
 git rm -rf 20**
 git rm -rf 19**
