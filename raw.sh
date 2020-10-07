@@ -1,6 +1,6 @@
 sh dates.sh
 TIME=$(date +"%T")
-
+# a million commits
 for Y in $COMMIT_DATE
 do
     mkdir $Y
@@ -28,9 +28,11 @@ do
     cd ../
 done
 
-git push origin master
-git rm -rf 20**
-git rm -rf 19**
+git push
+rm -rf 20**
+rm -rf 19**
+rm -rf COMMIT
+git add -A
 git commit --allow-empty-message -am ""
-git push origin master
+git push
 rm -rf Fri_* Sat_* Mon_* Tue_* Wed_* Thu_* Sun_*
