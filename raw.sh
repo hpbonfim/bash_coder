@@ -5,7 +5,7 @@ for Y in $COMMIT_DATE
 do
     mkdir $Y
     cd $Y
-    for M in {01..12}
+    for M in {01..09}
     do
         mkdir $M
         cd $M
